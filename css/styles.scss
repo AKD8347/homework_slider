@@ -1,0 +1,36 @@
+html {
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover, &:focus, &:visited {
+    text-decoration: none;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+
+@font-face {
+  font-family: Nunito Sans;
+  src: url('../fonts/NunitoSans-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: Yeseva One;
+  src: url('../fonts/YesevaOne-Regular.ttf') format('ttf');
+}
+
+$Nunito: 'Nunito Sans', sans-serif;
+$Yeseva: 'Yeseva One', cursive;
