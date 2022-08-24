@@ -293,6 +293,7 @@ $Yeseva: 'Yeseva One', cursive;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
     position: relative;
     margin-top: 0;
     height: 20px;
@@ -314,6 +315,32 @@ $Yeseva: 'Yeseva One', cursive;
       background-image: url('../img/icons/arr_right_icon.svg');
       background-repeat: no-repeat;
       background-size: contain;
+    }
+  }
+
+  &__dots {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0 9px;
+
+    &--item {
+      display: block;
+      position: relative;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      overflow: hidden;
+      background-color: rgba(255, 255, 255, 0.3);
+      cursor: pointer;
+      margin: 0 9px;
+      transition: 0.4s all;
+
+      &.active, &:hover {
+        background-color: #fff;
+      }
     }
   }
 }
